@@ -1,0 +1,42 @@
+﻿<Window x:Class="Generator_grafiku.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Generator_grafiku"
+        mc:Ignorable="d"
+        Title="Generator grafiku 24h" Height="560.8" Width="727.467" Icon="calendar.png">
+    
+    <Grid Background="#FFE5E5E5">
+        <Image x:Name="NewTab" HorizontalAlignment="Left" Height="325" Margin="74,41,0,0" VerticalAlignment="Top" Width="623" Source="newtab.jpg"/>
+        <Image x:Name="ColorTab" HorizontalAlignment="Left" Height="325" Margin="74,41,0,0" VerticalAlignment="Top" Width="623" Source="tabColors.jpg" Visibility="Hidden"/>
+        <Label Content="Tydzień 1" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 2" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 3" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 4" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 5" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 6" HorizontalAlignment="Left" Margin="10,219,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 7" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 8" HorizontalAlignment="Left" Margin="10,281,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 9" HorizontalAlignment="Left" Margin="10,307,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tydzień 10" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zespoły:" HorizontalAlignment="Left" Margin="19,7,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="teamA" Content="A" HorizontalAlignment="Left" Margin="80,5,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="teamB" Content="B" HorizontalAlignment="Left" Margin="107,5,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="teamC" Content="C" HorizontalAlignment="Left" Margin="133,5,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="teamD" Content="D" HorizontalAlignment="Left" Margin="159,5,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="teamE" Content="E" HorizontalAlignment="Left" Margin="188,5,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="HoursInfo" Content="Każdy zespół pracuje po 14 dni." HorizontalAlignment="Left" Margin="275,7,0,0" VerticalAlignment="Top" FontSize="14" Visibility="Hidden"/>
+        <Button x:Name="BtnCreate" Content="STWÓRZ GRAFIK" HorizontalAlignment="Left" Margin="127,472,0,0" VerticalAlignment="Top" Width="225" Height="39" FontSize="20" Background="#FFBABABA" Click="BtnCreate_Click"/>
+        <Button x:Name="BtnClear" Content="WYCZYŚĆ" HorizontalAlignment="Left" Margin="532,10,0,0" VerticalAlignment="Top" Width="165" Height="26" FontSize="18" Background="#FFBABABA" Click="BtnClear_Click" Visibility="Hidden"/>
+        <Button x:Name="BtnClose" Content="ZAMKNIJ" HorizontalAlignment="Left" Margin="522,472,0,0" VerticalAlignment="Top" Width="165" Height="39" FontSize="20" Background="#FFBABABA" Click="BtnClose_Click" BorderBrush="Red"/>
+        <Label Content="Które zespoły mają pracować w 1 tygodniu?" HorizontalAlignment="Left" Margin="80,371,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Wybierz 3 zespoły:" HorizontalAlignment="Left" Margin="169,403,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <CheckBox x:Name="cbA" Content="A" HorizontalAlignment="Left" Margin="127,440,0,0" VerticalAlignment="Top" Checked="A_Checked" Unchecked="A_UnChecked"/>
+        <CheckBox x:Name="cbB" Content="B" HorizontalAlignment="Left" Margin="177,440,0,0" VerticalAlignment="Top" Checked="B_Checked" Unchecked="B_UnChecked"/>
+        <CheckBox x:Name="cbC" Content="C" HorizontalAlignment="Left" Margin="227,440,0,0" VerticalAlignment="Top" Checked="C_Checked" Unchecked="C_UnChecked"/>
+        <CheckBox x:Name="cbD" Content="D" HorizontalAlignment="Left" Margin="277,440,0,0" VerticalAlignment="Top" Checked="D_Checked" Unchecked="D_UnChecked"/>
+        <CheckBox x:Name="cbE" Content="E" HorizontalAlignment="Left" Margin="327,440,0,0" VerticalAlignment="Top" Checked="E_Checked" Unchecked="E_UnChecked"/>
+
+    </Grid>
+</Window>
